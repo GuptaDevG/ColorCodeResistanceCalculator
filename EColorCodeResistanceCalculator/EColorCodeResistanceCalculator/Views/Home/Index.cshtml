@@ -1,0 +1,51 @@
+﻿@model EColorCodeResistanceCalculator.Models.BandColorCode
+
+<h1 style="text-align:center">4 Band Resistor Color Code Calculator</h1>
+<hr />
+<h4 style="text-align: justify;"></h4>
+
+<div class="Container" style="height:500px">
+    <div class="drpClass">
+        <div>
+            @Html.Label("BandA", "1st Band", htmlAttributes: new { @class = "BandLabelText" })
+            @Html.DropDownListFor(m => m.OhmLoad, new SelectList(Model.OhmLoad, "Key", "Value"), htmlAttributes: new { id = "drpFirstBand", @class = "form-control" })
+        </div>
+        <div>
+            @Html.Label("BandB", "2nd Band", htmlAttributes: new { @class = "BandLabelText" })
+            @Html.DropDownListFor(m => m.OhmLoad, new SelectList(Model.OhmLoad, "Key", "Value"), htmlAttributes: new { id = "drpSecondBand", @class = "form-control" })
+        </div>
+        <div>
+            @Html.Label("BandC", "Multiplier", htmlAttributes: new { @class = "BandLabelText" })
+            @Html.DropDownListFor(m => m.MultiplierLoad, new SelectList(Model.MultiplierLoad, "Key", "Value"), htmlAttributes: new { id = "drpThirdBand", @class = "form-control" })
+        </div>
+        <div>
+            @Html.Label("BandD", "Tolerance", htmlAttributes: new { @class = "BandLabelText" })
+            @Html.DropDownListFor(m => m.ToleranceLoad, new SelectList(Model.ToleranceLoad, "Key", "Value"), htmlAttributes: new { id = "drpFourthBand", @class = "form-control" })
+        </div>
+    </div>
+    <div id="divError"></div>
+    <div id="divResult" class="resultClass">
+        <div>
+            <div>
+                @Html.Label("lblMininumResistance", "Min Resistance")
+            </div>
+            <div>
+                @Html.TextBox("txtMinResistance", "0", htmlAttributes: new { @class = "form-control" }) Ohms
+            </div>
+        </div>
+        <div>
+            <div>
+                @Html.Label("lblMaximumResistance", "Max Resistance")
+            </div>
+            <div>
+                @Html.TextBox("txtMaxResistance", "0", htmlAttributes: new { @class = "form-control" }) Ohms
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript" >
+    </script>
+}
+

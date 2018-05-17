@@ -1,0 +1,142 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height:auto;
+}
+
+html
+{
+    height:100%;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    height:90%;
+}
+
+footer
+{
+    height:10%;
+}
+
+footer > p{
+    text-align:center;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+/* for sizing and aligning site logo*/
+#imglogo
+{
+    width:100px;
+    height:20px;
+    margin-right:8px;
+}
+
+/* for aligning Top Menu*/
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/*align content vertically*/
+.Container {
+    display: flex;
+    flex-direction: column;
+}
+
+    .Container > div {
+        padding: 30px;
+    }
+
+/*Align select controls horizontally*/
+.drpClass {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+    .drpClass div {
+        padding: 10px;
+    }
+
+/*Style results divison*/
+.resultClass {
+    text-align: center;
+    background: #e6e2e2;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: darkslategray;
+    display:flex;
+}
+
+.resultClass > div {
+   margin: 0px 10px;
+}
+
+
+.BandLabelText {
+    font-weight: 600;
+}
+#divError{
+    color:red;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 640px) {
+    .resistor .band {
+        width: 30px;
+        height: 40px;
+        margin-bottom: 14px;
+    }
+
+        .resistor .band:after {
+            height: 40px !important;
+        }
+
+    .resistor > * {
+        width: 60px;
+        height: 70px;
+    }
+
+    .drpClass {
+        flex-direction: column !important;
+    }
+
+    .drpClass div {
+        width: 100% !important;
+    }
+}
+
+
+@media only screen and (max-width: 340px) {
+    .resistor .band {
+        width: 20px !important;
+        height: 40px;
+        margin-bottom: 14px;
+    }
+
+        .resistor .band:after {
+           width: 10px !important;
+        }
+
+}
