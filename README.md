@@ -18,10 +18,10 @@ public interface IOhmValueCalculator
 
 4. Submit your code by a public or private repository like github, gitlab or bitbucket.  Your repository should include instructions on how to set up, compile & run your application.  You can assume your instructions will be read by a developer.
 
-5.  We will look at your GUI, so it’s important we are able to compile and run your application.
+5.  We will look at your GUI, so itâ€™s important we are able to compile and run your application.
 
 
-Know Issue: CalculateOhmValue method expecting integer output (single value) and if we consider 4th input parameter bandDColor( Tolerance)  then it will return rage of resistances (min and max).
+Known Issue: CalculateOhmValue method expecting integer output (single value) and if we consider 4th input parameter bandDColor( Tolerance)  then it will return rage of resistances (min and max).
 So I would need to change output data type that can hold range of resistances (max and min).
 
 How to run: This application is built in .NET MVC Core 2.0 Framework, so you would need .NET core 2.0 Framework to compile and run.
